@@ -6,7 +6,7 @@
     "example": "example"
   },
   "scripts": {
-       "lint": "stylelint \"**/*.scss\"",
+    "lint": "stylelint \"**/*.scss\"",
     "watch": "sass default/scss/style.scss:default/css/style.css --no-source-map --watch",
     "watch-min": "sass default/scss/style.scss:default/css/style.min.css  --no-source-map --watch --style compressed",
     "style": "npm run style-light",
@@ -20,8 +20,8 @@
   "description": "",
   "devDependencies": {
     "normalize.css": "^8.0.1",
-    "sass": "^1.83.0",
-    "stylelint": "^16.12.0",
+    "sass": "^1.81.0",
+    "stylelint": "^16.10.0",
     "stylelint-config-sass-guidelines": "^12.1.0"
   }
 }

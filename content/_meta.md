@@ -1,11 +1,10 @@
 ---
-Logo: image/logo1.png
+Logo: image/b-logo.png
 Tagline: Web designer/developer
 Social:
     - title: Link to the projects github repo.
       url: https://github.com/Petra-Johansson/design24-projekt
       icon: github
-
 Connect:
     - title: Let's connect on LinkedIn
       icon: linkedin
