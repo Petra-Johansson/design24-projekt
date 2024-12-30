@@ -1,0 +1,35 @@
+@use 'variables' as vars;
+
+.highlight {
+    padding: 1em;
+    margin: 1.5em;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    h2 {
+        margin-left: 16px;
+    }
+
+    p {
+        overflow: visible;
+
+        .highlink {
+            display: block;
+            margin-top: 1.5em;
+            font-style: oblique;
+            color: vars.$accent-color;
+        }
+    }
+
+    picture img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+}
+

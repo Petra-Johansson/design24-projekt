@@ -1,0 +1,47 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main"> 
+    <div class="inner-container">  
+        <article class="contact-art">
+            <h1> Let's get in touch! </h1>
+      
+<div class="contact-container">
+       {% for Connect in pages["_meta"].meta.Connect %}
+        <a href="{{ Connect.url }}" title="{{ Connect.title }}" role="button" target="_blank">
+            <img src="{{ assets_url }}/svg/{{ Connect.icon }}.svg" class="icon" alt="Icon for {{ Connect.icon }}">
+            <span class="sr-only">{{ Connect.title }}</span> <span>{{ Connect.title }}</span>
+        </a>
+        {% endfor %}
+</div>
+
+<div class="contact-form">
+  <form>
+    <fieldset>
+      <div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+      </div>
+      <div>
+        <label for="email">Your e-mail</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" ></textarea>
+      </div>
+      <input type="submit" value="Send!" class="submit-btn">
+    </fieldset>
+  </form>
+</div>
+            {{ content }}
+        </article>
+        </div>
+    </div>
+        {% include 'incl/footer.twig' %}
+
+</body>
+
+</html>

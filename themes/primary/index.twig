@@ -1,0 +1,27 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">   
+    <article class="inner-container">   
+            {{ content }} 
+           <div class="presentation index">
+            <div>
+            <p>I am a passionate Web designer, developer and programmer</p>
+            </div>
+
+            <div>
+                <p>
+                    
+                    <a href="{{ base_url}}/highlights">Check out my lastest work here! </a>
+                </p>
+            </div>
+            </div>
+    </article>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
