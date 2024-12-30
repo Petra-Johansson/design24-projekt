@@ -3,7 +3,7 @@ Title: Home
 Description: This is our index page.
 ---
 
-START
+I am Bew Gorp 
 ==========================
 
-Den här sidan skall representera mitt slutprojekt i kursen Design.
+

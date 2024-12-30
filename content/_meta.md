@@ -1,5 +1,6 @@
 ---
 Logo: image/b-logo.png
+LogoSmall: image/b-logo-small.png
 Tagline: Web designer/developer
 Social:
     - title: Link to the projects github repo.

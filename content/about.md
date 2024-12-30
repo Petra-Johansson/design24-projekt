@@ -4,4 +4,4 @@ Description: This is the About page
 Template: about
 ---
 
-# HEJ
+# About me
