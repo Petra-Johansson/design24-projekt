@@ -345,13 +345,18 @@ html {
   font-size: 3em;
 }
 
+@media (max-width: 900px) {
+  .main {
+    padding: 0.7em;
+  }
+  .main .inner-container {
+    width: 100%;
+    padding: 0.4em 0.4em 1em 0.4em;
+  }
+}
 .header,
 .footer {
   flex: 0 0 auto;
-}
-
-footer {
-  margin-top: auto;
 }
 
 .hidden {
@@ -401,6 +406,42 @@ footer {
   pointer-events: none;
 }
 
+legend {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #d8a966;
+  margin: 0 auto;
+}
+
+.link-w-border {
+  display: inline-block;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 1.2em;
+  margin: 0.8em;
+  background-color: #d8a966;
+  border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.error {
+  background-image: url("../../../assets/svg/magnifying-glass-solid.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  width: 90vw;
+  text-align: center;
+}
+.error p {
+  font-size: 2em;
+}
+.error p a {
+  padding: unset;
+}
+
 a {
   text-decoration: none;
   padding: 1%;
@@ -439,19 +480,20 @@ p {
   position: relative;
   z-index: 1;
   background-color: #d8a966;
+  /*
+      .filter-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          z-index: 1;
+          pointer-events: none;
+      }*/
 }
 .header.filter {
   overflow: hidden;
-}
-.header .filter-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-  pointer-events: none;
 }
 .header *,
 .header .nav * {
@@ -509,6 +551,10 @@ p {
     height: auto;
   }
 }
+footer {
+  margin-top: auto;
+}
+
 .footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -551,13 +597,36 @@ p {
   .footer a .icon {
     font-size: 1em;
   }
+  .footer .social {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2em;
+}
+.contact-grid h1 {
+  grid-column: span 6;
+  justify-self: center;
+}
+.contact-grid .contact-container {
+  grid-column: 2/6;
+}
+.contact-grid .contact-form {
+  grid-column: span 6;
+}
+
+@media (min-width: 1400px) {
+  .contact-grid .contact-form {
+    grid-column: 2/6;
+  }
 }
 .contact-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 75%;
-  margin: 0 auto;
 }
 .contact-container a {
   display: flex;
@@ -580,12 +649,23 @@ p {
   display: flex;
   flex-direction: column;
 }
-.contact-form > form input {
+.contact-form > form input, .contact-form > form textarea {
   padding: 1%;
   color: #333;
+  border-radius: 4px;
 }
 .contact-form > form .submit-btn {
+  display: block;
+  margin: 2em auto;
+  padding: 0.7em;
   background-color: #d8a966;
+  border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  cursor: pointer;
+}
+.contact-form > form .submit-btn:hover {
+  background-color: rgb(242, 242, 245);
+  font-style: italic;
 }
 
 @media (max-width: 767px) {
@@ -597,15 +677,16 @@ p {
 .presentation {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3em;
+  gap: 2.5em;
 }
 .presentation.index p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 767px) {
   .presentation {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
   .presentation.index p {
     font-size: 1rem;
@@ -614,6 +695,7 @@ p {
 .highlight {
   padding: 1em;
   margin: 1.5em;
+  border-radius: 96% 4% 97% 3%/3% 96% 4% 97%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .highlight h2 {
@@ -632,6 +714,8 @@ p {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 96% 4% 97% 3%/3% 96% 4% 97%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .highlight a:hover {
   text-decoration: underline;

@@ -1,5 +1,8 @@
 @use 'variables' as vars;
 
+footer {
+    margin-top: auto;
+}
 .footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -41,6 +44,11 @@
         a i,
         a .icon {
             font-size: 1em;
+        }
+
+        .social {
+            flex-direction: row;
+                justify-content: space-evenly;
         }
     }
 }
