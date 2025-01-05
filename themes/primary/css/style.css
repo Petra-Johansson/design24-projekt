@@ -570,7 +570,7 @@ footer {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   padding: 2em;
   background-color: #edb98e;
@@ -579,7 +579,8 @@ footer {
   color: #333;
 }
 .footer .logo,
-.footer .social {
+.footer .social,
+.footer .theme {
   display: flex;
   flex-direction: column;
   color: #333;
@@ -589,7 +590,9 @@ footer {
 .footer .logo a i,
 .footer .logo a .icon,
 .footer .social a i,
-.footer .social a .icon {
+.footer .social a .icon,
+.footer .theme a i,
+.footer .theme a .icon {
   color: #333;
   font-size: 1.5em;
   transition: all 0.2s ease-in-out;
@@ -597,7 +600,9 @@ footer {
 .footer .logo a i:hover,
 .footer .logo a .icon:hover,
 .footer .social a i:hover,
-.footer .social a .icon:hover {
+.footer .social a .icon:hover,
+.footer .theme a i:hover,
+.footer .theme a .icon:hover {
   transform: scale(1.5);
 }
 
@@ -613,6 +618,13 @@ footer {
   .footer .social {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  .footer .theme {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer .theme a {
+    margin: 1em 0.5em;
   }
 }
 .contact-grid {
