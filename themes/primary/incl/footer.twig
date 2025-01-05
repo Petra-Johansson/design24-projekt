@@ -3,7 +3,7 @@
    <div class="logo">
             <a href="{{ base_url }}">
           
-            <img src="{{ base_url }}/{{ pages["_meta"].meta.LogoSmall|url }}" alt="logo small" width="75" height="75"/>
+            <img src="{{ base_url }}/{{ pages["_meta"].meta.LogoSmall|url }}" alt="logo small" width="75" height="75" title="Logo that leads to homepage"/>
             <p>Copyright by Petra, 2024</p>
             </a>
         </div>
@@ -18,7 +18,7 @@
 
          {% for Connect in pages["_meta"].meta.Connect %}
         <a href="{{ Connect.url }}" title="{{ Connect.title }}" role="button" target="_blank">
-            <img src="{{ assets_url }}/svg/{{ Connect.icon }}.svg" class="icon" alt="Icon for {{ Connect.icon }}">
+            <img src="{{ assets_url }}/svg/{{ Connect.icon }}.svg" class="icon" alt="Icon for {{ Connect.title }}" title="Icon for {{ Connect.title }}">
             <span class="sr-only">{{ Connect.title }}</span>
         </a>
         {% endfor %}

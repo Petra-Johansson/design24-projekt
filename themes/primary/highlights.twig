@@ -1,3 +1,9 @@
+{% set wtpics = [
+    "webtec-snap.png",
+    "webtec2.png"
+
+]%}
+
 {% include 'incl/header.twig' %}
 
 <body>
@@ -16,10 +22,11 @@
 
 
             <br>
-            <a href="https://www.student.bth.se/~pejo24/dbwebb-kurser/webtec/me/proj/public/home.php" target="_blank" class="highlink">Visit this project</a>
+            <a href="https://www.student.bth.se/~pejo24/dbwebb-kurser/webtec/me/proj/public/home.php" 
+            target="_blank" class="highlink">Visit this project &#10132;</a>
             </p>
            
-        
+        <div>
             <picture>
             <source media="(min-width: 768px)"  
                 srcset="{{ base_url }}/image/work/nvm-snap.png?w=400 400w, 
@@ -32,9 +39,11 @@
                                 sizes="(max-width: 767px) 100vw">
                             <img 
                                 src="{{ base_url }}/image/work/nvm-snap.png" 
-                                alt="Picture representing the work I made for Nättraby Vägmuseum" 
+                                alt="Picture representing the work I made for Nättraby Vägmuseum."
+                                title="Picture representing the work I made for Nättraby Vägmuseum."
                                loading="lazy" >
                             </picture>
+                            </div>
             </div>
             </article>
 
@@ -47,7 +56,8 @@
 
 
             <br>
-            <a href="https://www.student.bth.se/~pejo24/dbwebb-kurser/design/me/portfolio/" target="_blank" class="highlink">Visit this project</a>
+            <a href="https://www.student.bth.se/~pejo24/dbwebb-kurser/design/me/portfolio/" 
+            target="_blank" class="highlink">Visit this project &#10132;</a>
             </p>
            
         
@@ -63,7 +73,8 @@
                                 sizes="(max-width: 767px) 100vw">
                             <img 
                                 src="{{ base_url }}/image/work/portfolio-snap.png" 
-                                alt="Picture representing the work I made for Petra (myself...)" 
+                                alt="Picture representing the work I made for Petra (myself...)." 
+                                title="Picture representing the work I made for Petra (myself...)." 
                                loading="lazy" >
                             </picture>
                             </div>
@@ -79,24 +90,29 @@
 
 
             <br>
-            <a href="https://www.student.bth.se/~pejo24/dbwebb-kurser/webtec/me/report/public/about.php" target="_blank" class="highlink"> Visit this project</a>
+            <a href="https://www.student.bth.se/~pejo24/dbwebb-kurser/webtec/me/report/public/about.php" 
+            target="_blank" class="highlink">Visit this project &#10132;</a>
             </p>
-           
+           <div>
+           {% for pic in wtpics %}
         <picture>
            <source media="(min-width: 768px)"  
-                srcset="{{ base_url }}/image/work/webtec-snap.png?w=400 400w, 
-                {{ base_url }}/image/work/webtec-snap.png?w=800 800w"
+                srcset="{{ base_url }}/image/work/{{ pic }}?w=400 400w, 
+                {{ base_url }}/image/work/{{ pic }}?w=800 800w"
                   sizes="(min-width: 768px) 50vw">
 
                             <source media="(max-width: 767px)" 
-                                srcset="{{ base_url }}/image/work/webtec-snap.png?w=480 480w, 
-                                {{ base_url }}/image/work/webtec-snap.png?w=320 320w"
+                                srcset="{{ base_url }}/image/work/{{ pic }}?w=480 480w, 
+                                {{ base_url }}/image/work/{{ pic}}?w=320 320w"
                                 sizes="(max-width: 767px) 100vw">
                             <img 
-                                src="{{ base_url }}/image/work/webtec-snap.png" 
-                                alt="Picture representing the work I made for the course Webtec" 
+                                src="{{ base_url }}/image/work/{{ pic }}" 
+                                alt="Picture representing the work I made for the course Webtec." 
+                                title="Picture representing the work I made for the course Webtec." 
                                loading="lazy" >
                             </picture>
+                            {% endfor %}
+</div>
                             </div>
 
             </article>
@@ -109,7 +125,7 @@
             Find your perfect match with LoveConnect. Explore meaningful connections and start your love story today!
             
             <br>
-            <a href="#" class="highlink">Visit this project</a>
+            <a href="{{ base_url }}/mock"  class="highlink">Visit this project &#10132;</a>
             </p>
            
         
@@ -125,7 +141,8 @@
                                 sizes="(max-width: 767px) 100vw">
                             <img 
                                 src="{{ base_url }}/image/work/datingapp-dalle.webp" 
-                                alt="Picture representing the work I made for " 
+                                alt="Picture representing the work I made for the Love Connect app." 
+                                title="Picture representing the work I made for the Love Connect app." 
                                loading="lazy" >
                             </picture>
                 </div>
@@ -139,7 +156,7 @@
             Secure your financial future with Global Trust Bank. Manage your accounts, transfer funds, and stay in control with just a few clicks.
             
             <br>
-            <a href="#" class="highlink">Visit this project</a>
+            <a href="{{ base_url }}/mock" class="highlink">Visit this project &#10132;</a>
             </p>
            
         
@@ -155,15 +172,13 @@
                                 sizes="(max-width: 767px) 100vw">
                             <img 
                                 src="{{ base_url }}/image/work/bankapp-dalle.webp" 
-                                alt="Picture showing the work I made for Global Trust Bank " 
+                                alt="Picture showing the work I made for Global Trust Bank." 
+                                title="Picture showing the work I made for Global Trust Bank." 
                                loading="lazy" >
                             </picture>
                             </div>
 
             </article>
-
-    
-
             
 </div>
 </div>

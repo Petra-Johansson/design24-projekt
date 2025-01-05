@@ -333,7 +333,7 @@ html {
 
 .main {
   flex: 1 0 auto;
-  background-color: #277a7a;
+  background-color: #267070;
   padding: 2em;
 }
 .main .inner-container {
@@ -409,8 +409,14 @@ html {
 legend {
   text-transform: uppercase;
   font-weight: 800;
-  color: #d8a966;
   margin: 0 auto;
+  padding: 0.5em;
+}
+
+fieldset {
+  border-color: #edb98e;
+  border-style: groove;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .link-w-border {
@@ -419,9 +425,16 @@ legend {
   text-align: center;
   padding: 1.2em;
   margin: 0.8em;
-  background-color: #d8a966;
+  background-color: #edb98e;
   border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #333;
+}
+
+.highlink {
+  display: block;
+  margin-top: 1.5em;
+  color: #ffe5cf;
 }
 
 .error {
@@ -479,7 +492,7 @@ p {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  background-color: #d8a966;
+  background-color: #edb98e;
   /*
       .filter-overlay {
           position: absolute;
@@ -520,7 +533,7 @@ p {
   z-index: 2;
 }
 .header .nav ul li a:hover {
-  border-bottom: 5px solid #d8a966;
+  border-bottom: 5px solid #edb98e;
 }
 
 @media (max-width: 1020px) {
@@ -560,7 +573,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   padding: 2em;
-  background-color: #d8a966;
+  background-color: #edb98e;
 }
 .footer a > p {
   color: #333;
@@ -653,12 +666,13 @@ footer {
   padding: 1%;
   color: #333;
   border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .contact-form > form .submit-btn {
   display: block;
   margin: 2em auto;
   padding: 0.7em;
-  background-color: #d8a966;
+  background-color: #edb98e;
   border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
@@ -704,22 +718,23 @@ footer {
 .highlight p {
   overflow: visible;
 }
-.highlight p .highlink {
-  display: block;
-  margin-top: 1.5em;
-  font-style: oblique;
-  color: #d8a966;
-}
 .highlight picture img {
+  margin: 1em 0;
   width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 96% 4% 97% 3%/3% 96% 4% 97%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: #fff;
 }
 .highlight a:hover {
   text-decoration: underline;
   text-underline-offset: 7px;
+  font-style: italic;
+}
+
+.mock-text h2 {
+  text-align: center;
 }
 
 .slide {

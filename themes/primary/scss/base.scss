@@ -111,8 +111,14 @@ html {
 legend {
     text-transform: uppercase;
     font-weight: 800;
-    color: vars.$accent-color;
     margin: 0 auto;
+    padding: .5em;
+}
+
+fieldset {
+    border-color: vars.$accent-color;
+    border-style:groove;
+    box-shadow: vars.$box-shadow;
 }
 
 .link-w-border {
@@ -124,8 +130,14 @@ legend {
     background-color: vars.$accent-color;
     border-radius: 91% 9% 92% 8% / 29% 64% 36% 71%;
     box-shadow: vars.$box-shadow;
+    color: vars.$font-alt-color;
 }
-
+  .highlink {
+      display: block;
+      margin-top: 1.5em;
+      color: vars.$link-color;
+  }
+  
 .error {
     background-image: url("../../../assets/svg/magnifying-glass-solid.svg");
     background-repeat: no-repeat;
