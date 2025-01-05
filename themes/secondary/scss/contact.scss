@@ -1,0 +1,89 @@
+@use 'variables' as vars;
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2em;
+
+        h1 {
+            grid-column: span 6;
+            justify-self: center;
+        }
+
+        .contact-container {
+            grid-column: 2 / 6;
+           
+        }
+        .contact-form {
+            grid-column: span 6 ;
+        }
+
+}
+
+@media (min-width: 1400px) {
+    .contact-grid {
+        .contact-form {
+            grid-column: 2/6;
+        }
+    }
+    
+}
+
+
+.contact-container {
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+
+    a {
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+
+        span {
+            margin-left: 1.2em;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.contact-form  > form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75%;
+
+    div {
+        margin: 1em 0;
+        display: flex;
+        flex-direction: column;
+    }
+ input, textarea {
+    padding:1%;
+    color: vars.$font-alt-color;
+    border-radius: 4px;
+    box-shadow: vars.$box-shadow;
+ }
+    .submit-btn {
+        display: block;
+        margin: 2em auto;
+        padding: .7em;
+        background-color: vars.$accent-color;
+        border-radius: 91% 9% 92% 8% / 29% 64% 36% 71%;
+        box-shadow: vars.$box-shadow;
+        cursor: pointer;
+
+        &:hover {
+            background-color: vars.$primary-color;
+            font-style: italic;
+        }
+    }
+    
+}
+@media (max-width: 767px) {
+    .contact-container{
+        flex-direction: column;
+        width: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+    <div class="inner-container">      
+            {{ content }}
+                <div class="presentation">
+                    <div>
+            <p>
+            I am a freelance web designer and developer with a passion for crafting creative, functional, and user-friendly websites! </p>
+            
+            <p>I’m always excited to explore new technologies, but I also rely on solid foundations like PHP and SQL to deliver reliable solutions. </p>
+            <p>Whether it’s designing something fresh or solving complex programming challenges, I thrive on turning ideas into reality.</p>
+
+            <p>Looking for someone to bring your next cool project to life? Let’s make it happen!</p>
+            </div>
+
+            <div class="flex-col-container">
+            <a href="{{ base_url }}/contact" class="link-w-border">Let's get in touch!</a>
+
+            <a href="{{ base_url }}/highlights" class="link-w-border">Check out my latest work </a>
+            
+            <a href="{{ base_url }}/docs" class="link-w-border">Documentation about the design</a>
+            </div>
+            </div>
+</div>
+</div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

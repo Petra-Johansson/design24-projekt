@@ -1,0 +1,36 @@
+@use 'variables' as vars;
+
+.highlight {
+    padding: 1em;
+    margin: 1.5em;
+    border-radius: 96% 4% 97% 3% / 3% 96% 4% 97%;
+    box-shadow: vars.$box-shadow;
+
+    h2 {
+        margin-left: 16px;
+    }
+
+    p {
+        overflow: visible;
+    }
+
+    picture img {
+        margin: 1em 0;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 96% 4% 97% 3% / 3% 96% 4% 97%;
+        box-shadow: vars.$box-shadow;
+        color: vars.$font-color;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+        font-style: italic;
+    }
+}
+
+.mock-text h2 {
+    text-align: center;
+}

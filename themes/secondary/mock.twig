@@ -1,0 +1,20 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">  
+    <article class="inner-container">   
+            {{ content }} 
+            <div class="mock-text">
+        <h2> <a href="{{base_url}}/highlights" class="highlink">&#8592; Go back to highlights</a></h2>
+        </div>
+    </article>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
+
+

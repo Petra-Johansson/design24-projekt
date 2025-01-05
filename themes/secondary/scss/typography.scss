@@ -1,0 +1,29 @@
+@use 'variables' as vars;
+
+a {
+    text-decoration: none;
+    padding: 1%;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+        
+    }
+}
+
+.header a {
+    text-transform: uppercase;
+}
+
+h1,
+.nav a {
+    font-family: vars.$heading-font;
+    color: vars.$primary-color;
+}
+
+
+p {
+    max-width: 70ch;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
