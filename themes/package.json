@@ -7,12 +7,12 @@
   },
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass primary/scss/style.scss:primary/css/style.css --no-source-map --watch",
-    "watch-min": "sass primary/scss/style.scss:primary/css/style.min.css  --no-source-map --watch --style compressed",
-    "style": "npm run style-light",
-    "style-min": "npm run style-light-min",
-    "style-light": "sass primary/scss/style.scss primary/css/style.css --no-source-map",
-    "style-light-min": "sass primary/scss/style.scss primary/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass primary/scss/style.scss:primary/css/style.css secondary/scss/style.scss:secondary/css/style.css --no-source-map --watch",
+    "watch-min": "sass primary/scss/style.scss:primary/css/style.min.css secondary/scss/style.scss:secondary/css/style.min.css --no-source-map --watch --style compressed",
+    "style-primary": "sass primary/scss/style.scss primary/css/style.css --no-source-map",
+    "style-primary-min": "sass primary/scss/style.scss primary/css/style.min.css --no-source-map --style compressed",
+    "style-secondary": "sass secondary/scss/style.scss secondary/css/style.css --no-source-map",
+    "style-secondary-min": "sass secondary/scss/style.scss secondary/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

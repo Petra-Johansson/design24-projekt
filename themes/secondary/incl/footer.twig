@@ -22,7 +22,17 @@
             <span class="sr-only">{{ Connect.title }}</span>
         </a>
         {% endfor %}
+        </div>
+    <div class="theme">
+        {% for Theme in pages["_meta"].meta.Theme %}
+        <a href="{{ Theme.url }}" title="{{ Theme.title }}" role="button">
+           <img src="{{ assets_url }}/svg/{{ Theme.icon }}.svg" class="icon" alt="Icon for {{ Theme.title }}">
+            <span class="sr-only">{{ Theme.title }}</span>
+        </a>
+        {% endfor %}
+        
     </div>
+
 </div>
 
 <script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>

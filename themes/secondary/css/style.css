@@ -333,7 +333,7 @@ html {
 
 .main {
   flex: 1 0 auto;
-  background-color: #267070;
+  background-color: #b9aead;
   padding: 2em;
 }
 .main .inner-container {
@@ -414,7 +414,7 @@ legend {
 }
 
 fieldset {
-  border-color: #edb98e;
+  border-color: #821616;
   border-style: groove;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -425,7 +425,7 @@ fieldset {
   text-align: center;
   padding: 1.2em;
   margin: 0.8em;
-  background-color: #edb98e;
+  background-color: #821616;
   border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: #333;
@@ -434,7 +434,7 @@ fieldset {
 .highlink {
   display: block;
   margin-top: 1.5em;
-  color: #ffe5cf;
+  color: #0a0640;
 }
 
 .error {
@@ -492,7 +492,7 @@ p {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  background-color: #edb98e;
+  background-color: #821616;
   /*
       .filter-overlay {
           position: absolute;
@@ -533,7 +533,7 @@ p {
   z-index: 2;
 }
 .header .nav ul li a:hover {
-  border-bottom: 5px solid #edb98e;
+  border-bottom: 5px solid #821616;
 }
 
 @media (max-width: 1020px) {
@@ -573,7 +573,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   padding: 2em;
-  background-color: #edb98e;
+  background-color: #821616;
 }
 .footer a > p {
   color: #333;
@@ -672,7 +672,7 @@ footer {
   display: block;
   margin: 2em auto;
   padding: 0.7em;
-  background-color: #edb98e;
+  background-color: #821616;
   border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
