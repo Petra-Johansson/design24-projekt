@@ -1,37 +1,33 @@
 <div class="footer">
-
-   <div class="logo">
-            <a href="{{ base_url }}">
-          
-            <img src="{{ base_url }}/{{ pages["_meta"].meta.LogoSmall|url }}" alt="logo small" width="75" height="75" title="Logo that leads to homepage"/>
-            <p>Copyright by Petra, 2024</p>
-            </a>
-        </div>
-    <div class="social">
-        
-        {% for social in pages["_meta"].meta.social %}
-        <a href="{{ social.url }}" title="{{ social.title }}" role="button" target="_blank">
-            <i class="fa fa-{{ social.icon }}" aria-hidden="true" alt="{{ social.title }}"></i>
-            <span class="sr-only">{{ social.title }}</span>
-        </a>
-        {% endfor %}
-
+ <div class="container">
+        <h3>Contact</h3>
          {% for Connect in pages["_meta"].meta.Connect %}
-        <a href="{{ Connect.url }}" title="{{ Connect.title }}" role="button" target="_blank">
+        <a href="{{ Connect.url }}" title="Link to {{ Connect.title }}" role="button" target="_blank">
             <img src="{{ assets_url }}/svg/{{ Connect.icon }}.svg" class="icon" alt="Icon for {{ Connect.title }}" title="Icon for {{ Connect.title }}">
-            <span class="sr-only">{{ Connect.title }}</span>
+            <span>{{ Connect.title }}</span>
         </a>
         {% endfor %}
         </div>
-    <div class="theme">
+    <div class="container">
+    <h3>Switch theme</h3>
         {% for Theme in pages["_meta"].meta.Theme %}
         <a href="{{ Theme.url }}" title="{{ Theme.title }}" role="button">
            <img src="{{ assets_url }}/svg/{{ Theme.icon }}.svg" class="icon" alt="Icon for {{ Theme.title }}">
             <span class="sr-only">{{ Theme.title }}</span>
         </a>
         {% endfor %}
-        
     </div>
+  
+       <div class="container">
+       <h3>Source code</h3>
+        {% for social in pages["_meta"].meta.social %}
+        <a href="{{ social.url }}" title="{{ social.title }}" role="button" target="_blank">
+            <i class="fa fa-{{ social.icon }}" aria-hidden="true" alt="{{ social.title }}"></i>
+            <span class="sr-only">{{ social.title }}</span>
+        </a>
+        {% endfor %}
+        </div>
+        <p>Copyright &#169; by Petra, 2025</p>
 
 </div>
 

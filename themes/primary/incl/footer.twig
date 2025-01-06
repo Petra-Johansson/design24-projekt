@@ -8,7 +8,7 @@
             </a>
         </div>
     <div class="social">
-        
+        <h3>Contact</h3>
         {% for social in pages["_meta"].meta.social %}
         <a href="{{ social.url }}" title="{{ social.title }}" role="button" target="_blank">
             <i class="fa fa-{{ social.icon }}" aria-hidden="true" alt="{{ social.title }}"></i>
@@ -24,6 +24,7 @@
         {% endfor %}
         </div>
     <div class="theme">
+    <h3>Switch theme</h3>
         {% for Theme in pages["_meta"].meta.Theme %}
         <a href="{{ Theme.url }}" title="{{ Theme.title }}" role="button">
            <img src="{{ assets_url }}/svg/{{ Theme.icon }}.svg" class="icon" alt="Icon for {{ Theme.title }}">

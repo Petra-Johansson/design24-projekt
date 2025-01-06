@@ -6,16 +6,22 @@
     <div class="main" role="main">   
     <article class="inner-container">   
 
-            {{ content }} 
            <div class="presentation index">
             <div>
-            <p>I am a passionate Web designer, developer and programmer</p>
+            {{ content }} 
+            <ul class="basics">
+            <li>&#10004; Web designer</li>
+            <li>&#10004; Web developer</li>
+            <li>&#10004; Web programmer</li>
+            <li> &#128205; Stockholm, Sweden</li>
+            </ul>
             </div>
 
-            <div>
-                <p>
-                    <a href="{{ base_url }}/highlights" class="link-w-border">Check out my lastest work here! </a>
-                </p>
+            <div class="link-container">
+                   <h2> <a href="{{ base_url }}/highlights" class="index-links">Work</a></h2>
+                    <h2><a href="{{ base_url }}/about" class="index-links">About</a></h2>
+                    <h2><a href="{{ base_url }}/contact" class="index-links">Contact</a></h2>
+            
             </div>
             </div>
     </article>

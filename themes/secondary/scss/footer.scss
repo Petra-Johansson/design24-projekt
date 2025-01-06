@@ -2,31 +2,39 @@
 
 footer {
     margin-top: auto;
+color: vars.$font-alt-color;
 }
 .footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
     padding: 2em;
-    background-color: vars.$accent-color;
-    
-    a > p{
-
-        color: vars.$font-alt-color;
+    background: linear-gradient(vars.$background-color, vars.$primary-color);
+    p {
+        font-weight: bold;
+    }
+    .container h3 {
+        text-decoration: underline;
+        text-underline-offset: 5px;
     }
 
-    .logo,
-    .social {
+    .container {
         display: flex;
         flex-direction: column;
         color: vars.$font-alt-color;
         width: 100%;
-        align-items: center;
+ 
+        a {
+            display: flex;
+            align-items: center;
 
-        a i,
+            span {
+                margin-left: .5em;
+            }
+        }
         a .icon {
-            color: vars.$font-alt-color;
-            font-size: 1.5em;
+            color: vars.$font-color;
+            font-size: 18px;
             transition: all .2s ease-in-out;
 
             &:hover {
@@ -46,9 +54,9 @@ footer {
             font-size: 1em;
         }
 
-        .social {
-            flex-direction: row;
-                justify-content: space-evenly;
+        .container {
+            flex-direction: column;
+            justify-content: space-evenly;
         }
     }
 }

@@ -16,6 +16,13 @@ footer {
         color: vars.$font-alt-color;
     }
 
+          .social h3,
+          .theme h3 {
+              text-decoration: underline;
+              text-underline-offset: 5px;
+          }
+          
+
     .logo,
     .social, 
     .theme {
