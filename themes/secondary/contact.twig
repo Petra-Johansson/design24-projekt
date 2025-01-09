@@ -5,9 +5,10 @@
 
     <div class="main" role="main"> 
     <div class="inner-container">  
-        <article class="contact-art contact-grid">
-            <h1> Let's get in touch! </h1>
+        <article class="contact-art">
+            <h1>Want to contact me? </h1>
       
+      <div class="contact-grid">
 <div class="contact-container">
        {% for Connect in pages["_meta"].meta.Connect %}
         <a href="{{ Connect.url }}" title="{{ Connect.title }}" role="button" target="_blank">
@@ -37,6 +38,7 @@
       <input type="submit" value="Send &#10132;" class="submit-btn">
     </fieldset>
   </form>
+</div>
 </div>
             {{ content }}
         </article>

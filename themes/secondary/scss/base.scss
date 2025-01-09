@@ -13,7 +13,7 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
     letter-spacing: 0.3px;
-    background-color: vars.$primary-color;
+    background-color: vars.$background-color;
 }
 
 * {
@@ -47,6 +47,10 @@ html {
         .inner-container {
             width: 100%;
             padding: .4em .4em 1em .4em;
+
+            h1 {
+                font-size: 2em;
+            }
         }
     }
 }
@@ -102,7 +106,6 @@ html {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    //background: rgba(199, 194, 191, 0.5);
     z-index: 1;
     pointer-events: none;
 }
@@ -116,7 +119,7 @@ legend {
 
 fieldset {
     border-color: vars.$accent-color;
-    border-style:groove;
+    border-style: groove;
     box-shadow: vars.$box-shadow;
 }
 
@@ -131,12 +134,13 @@ fieldset {
     box-shadow: vars.$box-shadow;
     color: vars.$font-alt-color;
 }
-  .highlink {
-      display: block;
-      margin-top: 1.5em;
-      color: vars.$link-color;
-  }
-  
+
+.highlink {
+    display: block;
+    margin-top: 1.5em;
+    color: vars.$link-color;
+}
+
 .error {
     background-image: url("../../../assets/svg/magnifying-glass-solid.svg");
     background-repeat: no-repeat;

@@ -1,6 +1,7 @@
 <div class="footer">
  <div class="container">
         <h3>Contact</h3>
+        <div class="theme-links">
          {% for Connect in pages["_meta"].meta.Connect %}
         <a href="{{ Connect.url }}" title="Link to {{ Connect.title }}" role="button" target="_blank">
             <img src="{{ assets_url }}/svg/{{ Connect.icon }}.svg" class="icon" alt="Icon for {{ Connect.title }}" title="Icon for {{ Connect.title }}">
@@ -8,14 +9,17 @@
         </a>
         {% endfor %}
         </div>
+        </div>
     <div class="container">
     <h3>Switch theme</h3>
+    <div class="theme-links">
         {% for Theme in pages["_meta"].meta.Theme %}
         <a href="{{ Theme.url }}" title="{{ Theme.title }}" role="button">
            <img src="{{ assets_url }}/svg/{{ Theme.icon }}.svg" class="icon" alt="Icon for {{ Theme.title }}">
             <span class="sr-only">{{ Theme.title }}</span>
         </a>
         {% endfor %}
+        </div>
     </div>
   
        <div class="container">

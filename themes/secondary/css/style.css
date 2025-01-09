@@ -320,12 +320,12 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   letter-spacing: 0.3px;
-  background-color: rgb(242, 242, 245);
+  background-color: #b9aead;
 }
 
 * {
   color: #333;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
   transition-duration: 200ms;
@@ -351,6 +351,9 @@ html {
   .main .inner-container {
     width: 100%;
     padding: 0.4em 0.4em 1em 0.4em;
+  }
+  .main .inner-container h1 {
+    font-size: 2em;
   }
 }
 .header,
@@ -541,6 +544,7 @@ p {
   .header {
     height: 30vh;
     padding: 0.5em;
+    align-items: center;
     flex-direction: column;
   }
   .header .title,
@@ -553,33 +557,36 @@ p {
   .header .title h1 {
     font-size: 1em;
   }
+  .header .site-header {
+    width: 100%;
+    justify-content: space-around;
+  }
   .header .logo img {
     height: auto;
   }
 }
-footer {
-  margin-top: auto;
-  color: #fff;
-}
-
 .footer {
+  margin-top: auto;
+  color: #333;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5em;
-  padding: 2em;
+  column-gap: 2.5em;
+  row-gap: 1em;
+  padding: 0.5em 2em;
   background: linear-gradient(#b9aead, rgb(242, 242, 245));
 }
 .footer p {
   font-weight: bold;
+  grid-column: span 2/4;
 }
 .footer .container h3 {
+  color: #333;
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 .footer .container {
   display: flex;
   flex-direction: column;
-  color: #fff;
   width: 100%;
 }
 .footer .container a {
@@ -611,32 +618,28 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
   }
+  .footer .container .theme-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer .container .theme-links a {
+    margin: 1em;
+  }
+  .footer p {
+    grid-column: auto;
+  }
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 30% auto;
   gap: 2em;
 }
-.contact-grid h1 {
-  grid-column: span 6;
-  justify-self: center;
-}
-.contact-grid .contact-container {
-  grid-column: 2/6;
-}
-.contact-grid .contact-form {
-  grid-column: span 6;
-}
 
-@media (min-width: 1400px) {
-  .contact-grid .contact-form {
-    grid-column: 2/6;
-  }
-}
 .contact-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .contact-container a {
   display: flex;
@@ -659,7 +662,8 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.contact-form > form input, .contact-form > form textarea {
+.contact-form > form input,
+.contact-form > form textarea {
   padding: 1%;
   color: #fff;
   border-radius: 4px;
@@ -670,19 +674,25 @@ footer {
   margin: 2em auto;
   padding: 0.7em;
   background-color: #821616;
-  border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
 }
 .contact-form > form .submit-btn:hover {
-  background-color: rgb(242, 242, 245);
+  background-color: #0a0640;
   font-style: italic;
 }
 
 @media (max-width: 767px) {
+  h1 {
+    text-align: center;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
   .contact-container {
     flex-direction: column;
-    width: 100%;
+    margin: 0 auto;
   }
 }
 .presentation {
@@ -711,26 +721,38 @@ footer {
   margin-top: 3em;
 }
 
+@media (max-width: 767px) {
+  .presentation {
+    gap: 1em;
+  }
+  .presentation .link-container a {
+    font-size: 1.5em;
+  }
+}
 .highlight {
   padding: 1em;
-  margin: 1.5em;
-  border-radius: 96% 4% 97% 3%/3% 96% 4% 97%;
+  margin: 1.5em 0;
+  background: linear-gradient(rgb(242, 242, 245), #b9aead);
+  border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .highlight h2 {
+  color: #333;
   margin-left: 16px;
 }
 .highlight p {
   overflow: visible;
+  color: #333;
 }
 .highlight picture img {
   margin: 1em 0;
   width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 96% 4% 97% 3%/3% 96% 4% 97%;
+  border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   color: #333;
+  filter: grayscale(60%);
 }
 .highlight a:hover {
   text-decoration: underline;

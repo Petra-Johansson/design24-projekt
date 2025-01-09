@@ -2,16 +2,20 @@
 
 .highlight {
     padding: 1em;
-    margin: 1.5em;
-    border-radius: 96% 4% 97% 3% / 3% 96% 4% 97%;
-    box-shadow: vars.$box-shadow;
+    margin:  1.5em 0;
+    background: linear-gradient(vars.$primary-color, vars.$background-color);
+    border-radius: 12px;
+        box-shadow: vars.$box-shadow;
+
 
     h2 {
+        color: vars.$font-color;
         margin-left: 16px;
     }
 
     p {
         overflow: visible;
+        color: vars.$font-color;
     }
 
     picture img {
@@ -19,9 +23,10 @@
         width: 100%;
         height: auto;
         object-fit: contain;
-        border-radius: 96% 4% 97% 3% / 3% 96% 4% 97%;
+        border-radius: 6px;
         box-shadow: vars.$box-shadow;
         color: vars.$font-color;
+        filter: grayscale(60%);
     }
 
     a:hover {

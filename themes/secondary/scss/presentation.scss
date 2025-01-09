@@ -26,10 +26,21 @@
     .basics {
         li {
             margin: 1em 0;
-            
-            &:last-child{
+
+            &:last-child {
                 margin-top: 3em;
             }
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .presentation {
+        gap: 1em;
+
+        .link-container a {
+            font-size: 1.5em;
+        }
+
     }
 }

@@ -14,10 +14,10 @@ Connect:
     icon: at
     url: mailto:johansson.m.petra@gmail.com
 Theme:
-  - title: Secondary theme
+  - title: Switch theme
     url: ?action=theme
     icon: brush
-  - title: Destroy Session and Switch theme
+  - title: Destroy Session and go back to default theme
     url: ?action=session_destroy
     icon: trash
 ---
