@@ -674,7 +674,8 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.contact-form > form input, .contact-form > form textarea {
+.contact-form > form input,
+.contact-form > form textarea {
   padding: 1%;
   color: #333;
   border-radius: 4px;
@@ -695,8 +696,14 @@ footer {
 }
 
 @media (max-width: 767px) {
-  .contact-container {
+  .contact-grid {
+    grid-template-columns: 1fr auto;
+  }
+  .contact-grid .contact-container {
     flex-direction: column;
+    width: 100%;
+  }
+  .contact-form > form {
     width: 100%;
   }
 }
