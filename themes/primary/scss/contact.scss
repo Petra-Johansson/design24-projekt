@@ -55,6 +55,10 @@
     margin: 0 auto;
     width: 75%;
 
+    fieldset {
+            padding: 0 2em;
+        }
+
     div {
         margin: 1em 0;
         display: flex;

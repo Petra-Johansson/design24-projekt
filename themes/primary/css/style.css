@@ -420,6 +420,7 @@ fieldset {
 }
 
 .link-w-border {
+  font-family: "Barrio", Georgia, serif;
   display: inline-block;
   word-wrap: break-word;
   text-align: center;
@@ -669,6 +670,9 @@ footer {
   margin: 0 auto;
   width: 75%;
 }
+.contact-form > form fieldset {
+  padding: 0 2em;
+}
 .contact-form > form div {
   margin: 1em 0;
   display: flex;
@@ -711,6 +715,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5em;
+}
+.presentation .about-text {
+  font-size: 1.2em;
+}
+.presentation .about-text a {
+  letter-spacing: 2px;
 }
 .presentation.index p {
   font-size: 1.5rem;
