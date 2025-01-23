@@ -18,10 +18,11 @@
 </div>
 
 <div class="contact-form">
-  <form>
+  <form method="post" action="">
     <fieldset>
      <legend>You can also use this form, if you want to!</legend>
-     <p>Actually, not right now. But it should be made possible in the future :) </p>
+    
+    <p>(it won't send anything, but it should)</p>
       <div>
         <label for="subject">Subject</label>
         <input type="text" id="subject" name="subject">
@@ -34,9 +35,11 @@
         <label for="message">Your message</label>
         <textarea id="message" name="message" rows="5" ></textarea>
       </div>
+      <input type="hidden" name="form_submitted" value="1">
       <input type="submit" value="Send &#10132;" class="submit-btn">
     </fieldset>
   </form>
+
 </div>
             {{ content }}
         </article>

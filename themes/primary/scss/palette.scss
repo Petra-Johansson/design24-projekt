@@ -1,0 +1,16 @@
+@use 'variables' as vars;
+
+.docs {
+    table {
+        thead th {
+            text-align: left;
+            padding: 10px 20px;
+        }
+
+        tbody td {
+            padding: 10px 20px;
+            text-align: left;
+        }
+    }
+}
+
