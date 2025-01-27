@@ -26,7 +26,8 @@ html {
 
 .main {
     flex: 1 0 auto;
-    background-color: vars.$background-color;
+   // background-color: vars.$background-color;
+    background: linear-gradient(vars.$dark-color, vars.$background-color);
     padding: 2em;
 
 
@@ -62,16 +63,6 @@ html {
 
 .hidden {
     display: none !important;
-}
-
-.icon {
-    width: 1em;
-    height: 1em;
-    transition: all .2s ease-in-out;
-
-    &:hover {
-        transform: scale(1.5);
-    }
 }
 
 .flex-col-container {
@@ -111,8 +102,9 @@ html {
 }
 
 legend {
+    color: vars.$primary-color;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 600;
     margin: 0 auto;
     padding: .5em;
 }
@@ -121,37 +113,6 @@ fieldset {
     border-color: vars.$accent-color;
     border-style: groove;
     box-shadow: vars.$box-shadow;
-}
-
-.link-w-border {
-    display: inline-block;
-    word-wrap: break-word;
-    text-align: center;
-    padding: 1.2em;
-    margin: .8em;
-    background-color: vars.$accent-color;
-    border-radius: 91% 9% 92% 8% / 29% 64% 36% 71%;
-    box-shadow: vars.$box-shadow;
-    color: vars.$font-alt-color;
-}
-
-.highlink {
-    display: block;
-    margin-top: 1.5em;
-    color: vars.$link-color;
-}
-
-.internal {
-    border: 1px solid vars.$primary-color;
-    border-radius: 5px;
-    width: fit-content;
-    padding: .6em;
-
-    &:hover {
-        text-decoration: none;
-        background-color: vars.$link-color;
-        color: vars.$primary-color;
-    }
 }
 
 .error {

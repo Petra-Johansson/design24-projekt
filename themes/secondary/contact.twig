@@ -13,7 +13,7 @@
        {% for Connect in pages["_meta"].meta.Connect %}
         <a href="{{ Connect.url }}" title="{{ Connect.title }}" role="button" target="_blank">
             <img src="{{ assets_url }}/svg/{{ Connect.icon }}.svg" class="icon" alt="Icon for {{ Connect.icon }}">
-            <span class="sr-only">{{ Connect.title }}</span> <span>{{ Connect.title }}</span>
+            <span class="sr-only">{{ Connect.title }}</span> <span>{{ Connect.title }} &#10132;</span>
         </a>
         {% endfor %}
 </div>

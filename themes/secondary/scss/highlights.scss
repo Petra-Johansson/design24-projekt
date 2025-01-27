@@ -3,13 +3,12 @@
 .highlight {
     padding: 1em;
     margin:  1.5em 0;
-    background: linear-gradient(vars.$primary-color, vars.$background-color);
+    background: linear-gradient(vars.$primary-color, vars.$dark-color);
     border-radius: 12px;
         box-shadow: vars.$box-shadow;
 
 
     h2 {
-        color: vars.$font-color;
         margin-left: 16px;
     }
 

@@ -2,7 +2,6 @@
 
 .footer {
     margin-top: auto;
-    color: vars.$font-color;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2.5em;
@@ -11,15 +10,8 @@
     background: linear-gradient(vars.$background-color, vars.$primary-color);
 
     p {
-        font-weight: bold;
         grid-column: span 2/4;
-
-    }
-
-    .container h3 {
-        color: vars.$font-color;
-        text-decoration: underline;
-        text-underline-offset: 5px;
+        color: vars.$heading-color;
     }
 
     .container {
@@ -27,6 +19,12 @@
         flex-direction: column;
         width: 100%;
 
+        h2 {
+            font-size: 1.3em;
+                color: vars.$heading-color;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
         a {
             display: flex;
             align-items: center;
@@ -36,9 +34,9 @@
             }
         }
 
-        a .icon {
-            color: vars.$font-color;
-            font-size: 18px;
+        .fa {
+            color: vars.$heading-color;
+            font-size: 1.2em;
             transition: all .2s ease-in-out;
 
             &:hover {

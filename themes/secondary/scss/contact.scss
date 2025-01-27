@@ -2,7 +2,7 @@
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 35% auto;
     gap: 2em;
 }
 
@@ -19,7 +19,8 @@
 
         span {
             margin-left: 1.2em;
-            font-size: 1.5em;
+            font-size: 1.3em;
+            color: vars.$font-color;
         }
     }
 }
@@ -39,7 +40,7 @@
     input,
     textarea {
         padding: 1%;
-        color: vars.$font-alt-color;
+        color: vars.$heading-color;
         border-radius: 4px;
         box-shadow: vars.$box-shadow;
     }
@@ -65,12 +66,21 @@
     h1 {
         text-align: center;
     }
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
     .contact-container {
         flex-direction: column;
-       
-        margin: 0 auto;
+        width: 100%;
+
+        a > span {
+            font-size: 1.2em;
+        }
+
+    }
+    .contact-form > form {
+        width: 100%;
     }
 }
