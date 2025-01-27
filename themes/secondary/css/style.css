@@ -320,7 +320,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   letter-spacing: 0.3px;
-  background-color: #b9aead;
+  background-color: #797b76;
 }
 
 * {
@@ -333,7 +333,7 @@ html {
 
 .main {
   flex: 1 0 auto;
-  background-color: #b9aead;
+  background-color: #797b76;
   padding: 2em;
 }
 .main .inner-container {
@@ -403,7 +403,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
   pointer-events: none;
 }
@@ -416,7 +416,7 @@ legend {
 }
 
 fieldset {
-  border-color: #821616;
+  border-color: #a4a59d;
   border-style: groove;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -427,16 +427,28 @@ fieldset {
   text-align: center;
   padding: 1.2em;
   margin: 0.8em;
-  background-color: #821616;
+  background-color: #a4a59d;
   border-radius: 91% 9% 92% 8%/29% 64% 36% 71%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  color: #fff;
+  color: #ece8d8;
 }
 
 .highlink {
   display: block;
   margin-top: 1.5em;
-  color: #0a0640;
+  color: #08052d;
+}
+
+.internal {
+  border: 1px solid #d4d1c4;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 0.6em;
+}
+.internal:hover {
+  text-decoration: none;
+  background-color: #08052d;
+  color: #d4d1c4;
 }
 
 .error {
@@ -478,7 +490,7 @@ h2 a,
 h3 a,
 .nav a {
   font-family: "Merriweather", Georgia, serif;
-  color: rgb(242, 242, 245);
+  color: #ece8d8;
 }
 
 p {
@@ -499,14 +511,14 @@ p {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
-  background-color: #821616;
+  background-color: #a4a59d;
 }
 .header.filter {
   overflow: hidden;
 }
 .header *,
 .header .nav * {
-  color: rgb(242, 242, 245);
+  color: #d4d1c4;
 }
 .header .site-header {
   position: relative;
@@ -529,7 +541,7 @@ p {
   z-index: 2;
 }
 .header .nav ul li a:hover {
-  border-bottom: 5px solid #821616;
+  border-bottom: 5px solid #a4a59d;
 }
 
 @media (max-width: 1020px) {
@@ -573,7 +585,7 @@ p {
   column-gap: 2.5em;
   row-gap: 1em;
   padding: 0.5em 2em;
-  background: linear-gradient(#b9aead, rgb(242, 242, 245));
+  background: linear-gradient(#797b76, #d4d1c4);
 }
 .footer p {
   font-weight: bold;
@@ -665,7 +677,7 @@ p {
 .contact-form > form input,
 .contact-form > form textarea {
   padding: 1%;
-  color: #fff;
+  color: #ece8d8;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -673,13 +685,13 @@ p {
   display: block;
   margin: 2em auto;
   padding: 0.7em;
-  background-color: #821616;
+  background-color: #a4a59d;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
 }
 .contact-form > form .submit-btn:hover {
-  background-color: #0a0640;
+  background-color: #08052d;
   font-style: italic;
 }
 
@@ -705,14 +717,17 @@ p {
   padding: 0.5em 0;
 }
 .presentation h2 a {
-  font-size: 2.5em;
-  color: #0a0640;
+  font-size: 1.3em;
+  color: #08052d;
   padding: 0.2em;
 }
 .presentation .link-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+.presentation .basics {
+  padding-inline-start: unset;
 }
 .presentation .basics li {
   margin: 1em 0;
@@ -732,7 +747,7 @@ p {
 .highlight {
   padding: 1em;
   margin: 1.5em 0;
-  background: linear-gradient(rgb(242, 242, 245), #b9aead);
+  background: linear-gradient(#d4d1c4, #797b76);
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
@@ -782,7 +797,7 @@ p {
 
 .nav a,
 .nav-toggle {
-  color: #fff;
+  color: #ece8d8;
 }
 
 .nav-toggle {
