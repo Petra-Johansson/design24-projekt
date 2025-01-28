@@ -20,7 +20,8 @@ h3,
 h1 a,
 h2 a,
 h3 a,
-.nav a {
+.nav a,
+.logo * {
     font-family: vars.$heading-font;
     color: vars.$heading-color;
 }
