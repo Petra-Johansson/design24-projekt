@@ -728,6 +728,10 @@ footer {
   font-size: 1.5rem;
 }
 
+.info-container {
+  font-size: 0.9em;
+}
+
 @media (max-width: 767px) {
   .presentation {
     grid-template-columns: 1fr;

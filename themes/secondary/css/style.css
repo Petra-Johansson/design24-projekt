@@ -747,6 +747,10 @@ p {
   margin-top: 3em;
 }
 
+.info-container {
+  font-size: 0.9em;
+}
+
 @media (max-width: 767px) {
   .presentation {
     gap: 1em;
