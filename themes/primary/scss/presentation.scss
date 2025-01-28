@@ -18,6 +18,10 @@
 
 }
 
+.info-container {
+font-size: .9em;
+}
+
 @media (max-width: 767px) {
     .presentation {
         grid-template-columns: 1fr;

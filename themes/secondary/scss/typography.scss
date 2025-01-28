@@ -1,0 +1,74 @@
+@use 'variables' as vars;
+
+a {
+    text-decoration: none;
+    padding: 1%;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+}
+
+.header a {
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h1 a,
+h2 a,
+h3 a,
+.nav a,
+.logo * {
+    font-family: vars.$heading-font;
+    color: vars.$heading-color;
+}
+
+p {
+    max-width: 70ch;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+.link-w-border {
+    display: inline-block;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 1.2em;
+    margin: .8em;
+    background-color: vars.$accent-color;
+    border-radius: 91% 9% 92% 8% / 29% 64% 36% 71%;
+    box-shadow: vars.$box-shadow;
+    color: vars.$heading-color;
+}
+
+.highlink {
+    display: block;
+    margin-top: 1.5em;
+    color: vars.$primary-color;
+}
+
+.internal {
+    border: 1px solid vars.$primary-color;
+    border-radius: 5px;
+    min-width: fit-content;
+    padding: .6em;
+
+    &:hover {
+        text-decoration: none;
+        background-color: vars.$dark-color;
+        color: vars.$primary-color;
+    }
+}

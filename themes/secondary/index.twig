@@ -1,0 +1,33 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">   
+    <article class="inner-container">   
+
+            {{ content }} 
+           <div class="presentation index">
+            
+            <ul class="basics">
+            <li>&#10004; Web designer</li>
+            <li>&#10004; Web developer</li>
+            <li>&#10004; Web programmer</li>
+            <li> &#128205; Stockholm, Sweden</li>
+            </ul>
+            
+
+            <div class="link-container">
+                   <h2> <a href="{{ base_url }}/highlights" class="internal index-links">Work &#10132;</a></h2>
+                    <h2><a href="{{ base_url }}/about" class="internal index-links">About &#10132;</a></h2>
+                    <h2><a href="{{ base_url }}/contact" class="internal index-links">Contact &#10132;</a></h2>
+            
+            </div>
+            </div>
+    </article>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

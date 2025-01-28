@@ -1,0 +1,22 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">  
+    <article class="inner-container error">   
+            {{ content }} 
+            <div class="error-text">
+          <p>Oops, my bad. Looks like this page doesn't exist.</p>
+
+        <p> <a href="{{base_url}}">Go back to Home</a></p>
+        </div>
+    </article>
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
+
+

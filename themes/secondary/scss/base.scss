@@ -1,0 +1,138 @@
+@use 'variables' as vars;
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    line-height: 1.4;
+    text-size-adjust: 100%;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    letter-spacing: 0.3px;
+    background-color: vars.$background-color;
+}
+
+* {
+    color: vars.$font-color;
+    font-family: vars.$primary-font;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition-duration: 200ms;
+}
+
+.main {
+    flex: 1 0 auto;
+   // background-color: vars.$background-color;
+    background: linear-gradient(vars.$dark-color, vars.$background-color);
+    padding: 2em;
+
+
+    .inner-container {
+        margin: 0 auto;
+        width: 90%;
+
+        h1 {
+            font-size: 3em;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .main {
+        padding: .7em;
+
+        .inner-container {
+            width: 100%;
+            padding: .4em .4em 1em .4em;
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.flex-col-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.two-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5em;
+    padding: 1em;
+}
+
+@media (max-width: 900px) {
+    .two-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        width: 100%;
+    }
+}
+
+
+.filter {
+    overflow: hidden;
+}
+
+.filter-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    pointer-events: none;
+}
+
+legend {
+    color: vars.$primary-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+fieldset {
+    border-color: vars.$accent-color;
+    border-style: groove;
+    box-shadow: vars.$box-shadow;
+}
+
+.error {
+    background-image: url("../../../assets/svg/magnifying-glass-solid.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+
+    width: 90vw;
+    text-align: center;
+
+    p {
+        font-size: 2em;
+
+        a {
+            padding: unset;
+        }
+
+    }
+}

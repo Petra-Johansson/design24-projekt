@@ -2,11 +2,11 @@
 
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100vw;
     height: 40vh;
-    padding: 3em 2em;
+    padding: 1em 2em;
 
     background-size: cover;
     background-position: center;
@@ -30,8 +30,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-    }
 
+    }
+.logo {
+    padding: 1em;
+}
     .title {
         margin-left: 2em;
     }
@@ -70,6 +73,7 @@
     .header {
         height: 30vh;
         padding: 0.5em;
+        align-items: center;
         flex-direction: column;
 
         .title,
@@ -83,6 +87,11 @@
             h1 {
                 font-size: 1em;
             }
+        }
+
+        .site-header {
+            width: 100%;
+            justify-content: space-around
         }
 
         .logo {

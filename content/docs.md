@@ -41,11 +41,10 @@ Fonten heter **Barrio** och känns lite lekfull och inbjudande och är satt att 
 ## Designprinciper och -element:
 ------
 
-Sidan har genomgående samma bakgrundsfärg, font-familj när det gäller rubriker, interna länkar samt brödtext vilket skapar en känsla av **enhetlighet** och **repetition**. **Hierarki** uppstår tydligt då rubriker och interna länkar dels har ett markant annorlunda typsnitt men även i storlek.
+Sidan har genomgående samma bakgrunds**färg**, font-familj när det gäller rubriker, interna länkar samt brödtext vilket skapar en känsla av **enhetlighet** och **repetition**. **Hierarki** uppstår tydligt då rubriker och interna länkar dels har ett markant annorlunda typsnitt men även i storlek.
 
 Jag har försökt arbeta med ganska mycket **white/negative-space** då bakgrundsfärgen är rätt stark och jag anser det vara än mer viktigt att då ge användaren rum för att ta in allt. Även **inramning** är något jag försökt tänka på, dels i highlights sidan där varje arbete är inramat, men även för de interna länkar på till exempel about-sidan där varje sådan drar till sig uppmärksamhet.
 På about-sidan skulle jag även säga att det är en tydlig **symmetri**. Sidan består av dels en text men även länkar men med hjälp av ett gridsystem tar de upp lika mycket plats. 
-
 
 
 
@@ -66,3 +65,32 @@ Jag har min **style.scss** vilken “drar ihop” alla SCSS-filer jag vill att s
 Jag valde sedan att dela upp mina filer på ett sätt som gör att namnet avspeglar vilket content som berörs. Jag velade om jag skulle göra så eller istället bryta upp i filer som till exempel links.scss, borders.scss, content.scss. Det känns som att alternativ två på ett sätt hade gjort det lite enklare att underhålla och återanvända - nu har jag istället flyttat en del återkommande styling/class:er till base.scss.
 
 Som det är nu har jag alltså en scss-fil för varje typ av content/include, tex header.scss, highlights.scss, contact.scss och så vidare.
+
+------
+
+## Det alternativa temat
+
+För det alternativa temat valde jag att gå ifrån det färgglada och lekfulla till en mer jordnära och kanske något stel, alternativt sofistikerad, stil - beroende på hur man vill se på det. Detta för att förmedla en känsla av att "*Bew*" är en seriös och sofistikerad utvecklare som man kan lita på kommer leverera det man förväntar sig. 
+
+Jag skulle påstå att de deisgnprinciper och -element som används och nömns för de tprimära temat även gäller för detta - undantaget skulle väl vara att det primära temat även har en starkare påverkan av *färg*.
+
+
+Färgpaletteni detta tema består som synes av neutrala och jordnära nyanser och skulle kanske kunna placeras i kategorien *Analogt* eller *Monokoromatiskt*, men det känns inte som att det uppfyller det till fullo. 
+
+
+![Bild på färghjul](image/wheel2.png){.wheel}
+
+
+| Variabelnamn       | Färg                   
+|--------------------|------------------------------------|
+| `$font-color`      | <span style="background-color:#ece8d8; color:#131212;  padding:5px 10px; display:inline-block; border:1px solid #ccc;">#ece8d8</span>      
+| `$heading-color`  | <span style="background-color:#131212; color:#ece8d8;  padding:5px 10px; display:inline-block; border:1px solid #ccc;">#131212</span>  
+| `$background-color`| <span style="background-color:#7c7971; color:#fff;   padding:5px 10px; display:inline-block; border:1px solid #ccc;">#7c7971</span>
+| `$accent-color`    | <span style="background-color:#a4a59d; color:#000;  padding:5px 10px; display:inline-block; border:1px solid #ccc;">#a4a59d</span>
+| `$link-color`      | <span style="background-color:#08052d; color:#ece8d8;  padding:5px 10px; display:inline-block; border:1px solid #ccc;">#08052d</span>
+| `$dark-color`      | <span style="background-color:#434644; color:#ece8d8;  padding:5px 10px; display:inline-block; border:1px solid #ccc;">#434644</span>
+
+
+Typografiskt har jag i detta tema valt att använda fonten **Merriweather** till rubriker och interna länkar för att skapa *kontrast* och någon typ av *hierarki* mot brödtexten som är skriven i **Inter**. De båda fonterna är lättlästa och enkla vilket jag anser passande till färgtemat. 
+
+
